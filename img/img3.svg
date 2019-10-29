@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="474" height="627" viewBox="0 0 474 627">
+  <defs>
+    <clipPath id="clip-img3">
+      <rect width="474" height="627"/>
+    </clipPath>
+  </defs>
+  <g id="img3" clip-path="url(#clip-img3)">
+    <g id="Group_6" data-name="Group 6" transform="translate(-386.445 -1005.396)">
+      <path id="Path_1" data-name="Path 1" d="M183.1,2493.865V2287.4H497.59v206.469" transform="translate(282.946 -1227)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.276"/>
+      <g id="Group_3" data-name="Group 3" transform="translate(501.039 1121.039)">
+        <line id="Line_21" data-name="Line 21" x2="244.504" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.276"/>
+        <line id="Line_22" data-name="Line 22" x2="244.504" transform="translate(0 52.331)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.276"/>
+        <line id="Line_23" data-name="Line 23" x2="244.504" transform="translate(0 104.662)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.276"/>
+      </g>
+      <path id="Path_2" data-name="Path 2" d="M530.332,2348.94c39.42,7.337,63.805,17.474,63.805,28.669,0,22.392-97.533,40.543-217.846,40.543S158.445,2400,158.445,2377.609c0-10.888,23.065-20.777,60.6-28.06" transform="translate(247 -1137.273)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.276"/>
+      <path id="Path_3" data-name="Path 3" d="M158.445,2363.02,355.2,2559.553v126.163s21.094,20.437,42.185,0V2559.553L594.137,2363.02" transform="translate(247 -1116.745)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.276"/>
+    </g>
+  </g>
+</svg>

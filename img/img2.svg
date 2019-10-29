@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="474" height="627" viewBox="0 0 474 627">
+  <defs>
+    <clipPath id="clip-img2">
+      <rect width="474" height="627"/>
+    </clipPath>
+  </defs>
+  <g id="img2" clip-path="url(#clip-img2)">
+    <g id="Group_9" data-name="Group 9" transform="translate(-374 -1518)">
+      <path id="Path_28" data-name="Path 28" d="M433.241,1825.791s-23.623-19.583-22.6-61.111-2.183-76.243,22.6-114.244,71-66.631,140.2-76,90.96,3.4,140.708,47.759,58.286,129.667,58.286,129.667l38.515,106.3s1.926,24.269-7.7,36.974-30.812,13.849-30.812,13.849,10.271,54.062,0,79.1-41.083,21.055-41.083,21.055-75.875.257-111.951-17.46-32.353-53.408-32.353-53.408v-61.111s22.6-22.116,22.21-51.37-9.372-49.3-39.67-69.841-87.044-13.737-108.869,8.73-36.975,63.165-15.406,101.166,62.651,43.138,62.651,43.138v180.781" transform="translate(0 -1)" fill="none" stroke="#fff" stroke-width="1.28"/>
+      <path id="Path_29" data-name="Path 29" d="M510.068,1711.609c3.081,1.027,0,84.22,0,84.22" transform="translate(208.698 296.017)" fill="none" stroke="#fff" stroke-width="1.28"/>
+    </g>
+  </g>
+</svg>
