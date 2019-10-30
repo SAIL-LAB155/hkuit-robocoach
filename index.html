@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>ROBOCOACH</title>
+    <title>HKUIT</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400&display=swap" rel="stylesheet">
@@ -23,7 +23,7 @@
 <style>
     body {
         margin: 0;
-        font-family: "Lato", sans-serif;
+        font-family: 'Montserrat', sans-serif;
         background: linear-gradient(180deg, rgba(0, 15, 44, 1) 0%, rgba(0, 99, 99, 1) 2000px);
     }
 
@@ -55,8 +55,9 @@
     }
 
     .mycard {
-        max-width: 700px;
-        width: 80%;
+        max-width: 1400px;
+        width: 100%;
+        height: 100%;
         margin: 0;
         position: relative;
         top: 0;
@@ -84,9 +85,10 @@
     }
 
     .mycard-text {
+        font-family: Montserrat;
         background-color: #1A1A1A;
         padding: 30px;
-        font-size: 18px;
+        font-size: 25px;
     }
 
     @media only screen and (max-width: 320px) {
@@ -118,7 +120,7 @@
         position: fixed;
         white-space: nowrap;
         float: left;
-        height: 50px;
+        height: 120px;
         width: 100%;
         background-color: rgba(0, 0, 0, 1);
 
@@ -219,13 +221,14 @@
     .nav_item {
         display: inline;
 
+        font-family: 'Montserrat', sans-serif;
         font-size: 25px;
 
         color: white;
         padding-left: 10px;
         /*opacity: 0.8;
         filter: alpha(opacity=80);*/
-        font-family: 'Montserrat', sans-serif;
+        
         cursor: pointer;
         z-index: 3;
     }
@@ -365,7 +368,7 @@
 
 
     <div class="nav_bar">
-        <div class="nav_logo"><img src="img/smalllogo.svg" style="height: 40px;padding-bottom:5px;"> &nbsp;ROBOCOACH
+        <div class="nav_logo"><img src="img/hkuit_logo.png" style="height: 80px;padding-bottom:5px;"> &nbsp;HKUIT
             &nbsp;&nbsp;|</div>
         <div class="nav_list">
 
@@ -397,6 +400,11 @@
 
             </div>
 
+            <div class="nav_item" onclick="window.location = '#news';">
+
+                <img src="img/ext_icon.svg">
+                <div>NEWS</div>
+            </div>
 
         </div>
 
@@ -433,59 +441,52 @@
         <br><br><br><br>
 
         <img src="img/banner.svg" class="banner-img">
-        <br><br><br><br>
-        <a name="about">&nbsp;<br><br><br></a>
 
-        <br><br>
-            <div class="mycard">
-                <iframe width="100%" height="360" src="https://www.youtube.com/embed/RS2THNm0NeA" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </div>
-            <br><br>
+        <a name="about">&nbsp;<br><br><br></a>
+        <center>
             
-        <div class="row mycard">
-            <div class="col-xs-2 col-sm-4 col-md-4 mycard-img" style="background-color: #FF6725;">
-                <img src="img/img1.svg" class="mycard-img-img" style="max-height: 200px;">
-            </div>
-            <div class="col-xs-2 col-sm-8 col-md-8 mycard-text">
-                Artificial Intelligence for Users’ Safety and Performance Analysis System
-            </div>
-        </div>
-        <br><br>
+            <h2>About</h2>
+            <br><br>
+                <p style = "font-family: Montserrat, sans-serif; font-size:30px;">
+                Our Company : The Hong Kong Univisual Intelligent Technology Limited 
+                <br>
+                Focus on developing A.I. solution for Sports' Safety and Performance Analysis
+                </p>
+        </center>
+        <br>
+
+                <br><br>
 
         <div class="row mycard">
             <div class="col-xs-2 col-sm-4 col-md-4 mycard-img" style="background-color: #661F79;">
                 <img src="img/img2.svg" class="mycard-img-img" style="max-height: 200px;">
             </div>
             <div class="col-xs-2 col-sm-8 col-md-8 mycard-text">
-                The following technologies are used in the
-                system:<br><br>
-                Human Pose Estimation Algorithm (Feature
-                Extractor of Human Body – Using TensorFlow)<br><br>
-
-                Long-short term memory neural network
-                (Artificial Intelligence with Memory
-                – Using Keras)
+                <Performance Analysis System : Robocoach >
+                <br>
+                A Real-time Feedback System of Yoga & Golf Coaching for Begineers
             </div>
         </div>
         <br><br>
 
-        <div class="row mycard">
-            <div class="col-xs-2 col-sm-4 col-md-4 mycard-img" style="background-color: #D4024A;">
-                <img src="img/img3.svg" class="mycard-img-img" style="max-height: 200px;">
+        <br>
+            <div class="mycard">
+                <iframe width="100%" height="800" src="https://www.youtube.com/embed/RS2THNm0NeA" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </div>
-            <div class="col-xs-2 col-sm-8 col-md-8 mycard-text">
-                Human Pose Estimation Algorithm:
-                Based on Convolution Neural Network
-                Mature technology with the precision of 95%
-                Widely utilize in several aspects
+            <br>
+
+        <br>
+
+            <div class="mycard">
+                <iframe width="100%" height="800" src="https://www.youtube.com/embed/OxaZHL7DBDE" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </div>
-        </div>
-        <br><br>
+            <br><br>
 
-
-        <div class="mycard" style="max-width: 400px;cursor: pointer;" onclick="
+                <div class="mycard" style="max-width: 400px;cursor: pointer;" onclick="
         document.getElementsByClassName('more-detail')[0].style.visibility='visible';
             ">
 
@@ -493,7 +494,7 @@
 
                 <center>
                     <h5><img src="img/ios-more.svg"
-                            style="filter: invert(1);width:30px;padding-bottom: 5px;">&nbsp;&nbsp;&nbsp;More Details about ROBOCOACH
+                            style="filter: invert(1);width:30px;padding-bottom: 5px;">&nbsp;&nbsp;&nbsp;More Details
                     </h5>
                 </center>
             </div>
@@ -505,19 +506,6 @@
                 <div onclick="document.getElementsByClassName('more-detail')[0].style.visibility='hidden';"
                     style="font-size: 30px;cursor: pointer;">X Close</div>
             </center>
-            <br><br><br>
-            <div class="mycard">
-                <iframe width="100%" height="360" src="https://www.youtube.com/embed/RS2THNm0NeA" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </div>
-            <br><br>
-
-            <div class="mycard">
-                <iframe width="100%" height="360" src="https://www.youtube.com/embed/OxaZHL7DBDE" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </div>
             <br><br>
 
             <div class="row mycard">
@@ -606,6 +594,118 @@
             </center>
         </div>
 
+        <div class="row mycard">
+            <div class="col-xs-2 col-sm-4 col-md-4 mycard-img" style="background-color: #FF6725;">
+                <img src="img/img1.svg" class="mycard-img-img" style="max-height: 200px;">
+            </div>
+            <div class="col-xs-2 col-sm-8 col-md-8 mycard-text">
+                Artificial Intelligence for Users’ Safety : Smartswim 
+                <br>
+                It aims at detecting pre-drowning cases in a swimming pool 
+
+            </div>
+        </div>
+
+        <br>
+            <div class="mycard">
+                <iframe width="100%" height="800" src="https://www.youtube.com/embed/YgjYnR-hcmw" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <br>
+
+        <div class="mycard" style="max-width: 400px;cursor: pointer;" onclick="
+        document.getElementsByClassName('more-detail')[0].style.visibility='visible';
+            ">
+
+            <div class="mycard-text" style="height: 70px;padding: 20px;">
+
+                <center>
+                    <h5><img src="img/ios-more.svg"
+                            style="filter: invert(1);width:30px;padding-bottom: 5px;">&nbsp;&nbsp;&nbsp;More Details
+                    </h5>
+                </center>
+            </div>
+        </div>
+        <br><br>
+
+        <div class="more-detail">
+            <center>
+                <div onclick="document.getElementsByClassName('more-detail')[0].style.visibility='hidden';"
+                    style="font-size: 30px;cursor: pointer;">X Close</div>
+            </center>
+
+            <div class="row mycard">
+                <div class="mycard-img" style="background-color: #D4024A;padding:0;">
+                    <img src="img/more5.png" class="mycard-img-img">
+                </div>
+                <div class="col-12 mycard-text">
+                    An Alternative Approach to Classify the Problems of a Golf Swing<br><br>
+                    Neural Network is now used for the detection of different stages of the golf swing as shown in the
+                    table
+                    below. <br><br>
+                    In each stage of the golf swing, there will be different criteria for the users to achieve. <br><br>
+                    For example, stage like backswing requires the users to keeps the left arm straight and turn his
+                    body.
+                    <br><br>
+                    Mathematical method can be used to track the users’ posture, which uses the coordinates of the human
+                    key
+                    points.
+
+
+                </div>
+            </div>
+            <br><br>
+
+            <center>
+                <div onclick="document.getElementsByClassName('more-detail')[0].style.visibility='hidden';"
+                    style="font-size: 30px;cursor: pointer;">X Close</div>
+            </center>
+        </div>
+
+
+        <div class="row mycard">
+            <div class="col-xs-2 col-sm-4 col-md-4 mycard-img" style="background-color: #D4024A;">
+                <img src="img/img3.svg" class="mycard-img-img" style="max-height: 200px;">
+            </div>
+            <div class="col-xs-2 col-sm-8 col-md-8 mycard-text">
+                Human Pose Estimation Algorithm:
+                Based on Convolution Neural Network
+                Mature technology with the precision of 95%
+                Widely utilize in several aspects
+            </div>
+        </div>
+        <br><br>
+
+        <a name="news">&nbsp;<br><br><br></a>
+        <center>
+            <h2>NEWS</h2>
+        </center>
+        <br>
+
+         <div class="row mycard">
+            <div class="col-xs-2 col-sm-4 col-md-4 mycard-img" style="background-color: #FF6725;">
+                <img src="img/mingpao.jpg" class="mycard-img-img" style="border-radius: 10%;">
+            </div>
+            <div class="col-xs-2 col-sm-8 col-md-8 mycard-text">
+                Newspaper Interview with MingPao on the project Smartswim<br>
+                <a href="https://news.mingpao.com/pns/%e6%b8%af%e8%81%9e/article/20190712/s00002/1562867624496/ai%e5%88%86%e6%9e%90%e6%b3%b3%e5%a7%bf-%e6%b3%b3%e6%b1%a0%e9%98%b2%e9%81%87%e6%ba%ba-%e5%89%b5%e7%a7%91%e7%94%9f%e6%b4%bb%e5%9f%ba%e9%87%91%e8%b3%87%e5%8a%a9390%e8%90%ac%e9%96%8b%e7%99%bc">News' Article Link</a> <br>
+
+            </div>
+        </div>
+        <br>
+
+                 <div class="row mycard">
+            <div class="col-xs-2 col-sm-4 col-md-4 mycard-img" style="background-color: #FF6725;">
+                <img src="img/tencentnews.jpg" class="mycard-img-img" style="border-radius: 10%;">
+            </div>
+            <div class="col-xs-2 col-sm-8 col-md-8 mycard-text">
+                Newspaper Report from Tencent News on the project Robocoach<br>
+                <a href="https://view.inews.qq.com/a/20191025A0MIF000?uid=&shareto=wx">News' Article Link</a> <br>
+
+            </div>
+        </div>
+        <br>
 
         <a name="awards">&nbsp;<br><br><br></a>
         <center>
@@ -653,8 +753,8 @@
                 <img src="img/contact.png" class="mycard-img-img" style="border-radius: 10%;">
             </div>
             <div class="col-xs-2 col-sm-8 col-md-8 mycard-text">
-                Email : saillab155@gmail.com <br>
-                Contact : +852 
+                Email :  <br>
+                saillab155@gmail.com
             </div>
         </div>
         <br>
