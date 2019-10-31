@@ -8,7 +8,10 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <script>
+        function resizeIframe(obj) {
+        obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+        }</script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -55,7 +58,7 @@
     }
 
     .mycard {
-        max-width: 1400px;
+        max-width: 800px;
         width: 100%;
         height: 100%;
         margin: 0;
@@ -337,7 +340,66 @@
 
         z-index: 10;
         visibility: hidden;
+
+    .iframe-container {
+    overflow: hidden;
+    // Calculated from the aspect ration of the content (in case of 16:9 it is 9/16= 0.5625)
+    padding-top: 56.25%;
+    position: relative;
     }
+ 
+    .iframe-container iframe {
+       border: 0;
+       height: 100%;
+       left: 0;
+       position: absolute;
+       top: 0;
+       width: 100%;
+    }
+    }
+
+/*=======================================================*/
+
+    .smartswim-detail {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        overflow-y: scroll;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 20px;
+
+        z-index: 10;
+        visibility: hidden;
+
+    .iframe-container {
+    overflow: hidden;
+    // Calculated from the aspect ration of the content (in case of 16:9 it is 9/16= 0.5625)
+    padding-top: 56.25%;
+    position: relative;
+    }
+ 
+    .iframe-container iframe {
+       border: 0;
+       height: 100%;
+       left: 0;
+       position: absolute;
+       top: 0;
+       width: 100%;
+    }
+    }
+
+
+
+
+/*=======================================================*/
+    .responsive-img {
+    width: 80%;
+    height: auto;
+    }
+
+
 </style>
 
 <body>
@@ -379,11 +441,11 @@
             </div>
 
 
-            <div class="nav_item" onclick="window.location = '#';">
+<!--             <div class="nav_item" onclick="window.location = '#';">
 
                 <img src="img/md-help-circle.svg">
                 <div>TEAM</div>
-            </div>
+            </div> -->
 
 
             <div class="nav_item" onclick="window.location = '#awards';closeNav();">
@@ -462,27 +524,33 @@
                 <img src="img/img2.svg" class="mycard-img-img" style="max-height: 200px;">
             </div>
             <div class="col-xs-2 col-sm-8 col-md-8 mycard-text">
-                <Performance Analysis System : Robocoach >
+                Performance Analysis System : Robocoach 
                 <br>
-                A Real-time Feedback System of Yoga & Golf Coaching for Begineers
+                <br>
+                Real-time feedback system of yoga & golf coaching for begineers
             </div>
         </div>
         <br><br>
 
+<!--          <p align="center"><div class="iframe-container">
+        <iframe width="100%" src="https://www.youtube.com/embed/RS2THNm0NeA" allowfullscreen></iframe>
+        </div></p> -->
+
         <br>
             <div class="mycard">
-                <iframe width="100%" height="800" src="https://www.youtube.com/embed/RS2THNm0NeA" frameborder="0"
+                <iframe width="100%" height="600" src="https://www.youtube.com/embed/RS2THNm0NeA" frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+                    allowfullscreen ></iframe>
             </div>
             <br>
 
         <br>
 
-            <div class="mycard">
-                <iframe width="100%" height="800" src="https://www.youtube.com/embed/OxaZHL7DBDE" frameborder="0"
+            <div class="mycard" >
+                <iframe width="100%" height="600" src="https://www.youtube.com/embed/OxaZHL7DBDE" frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+                    allowfullscreen ></iframe>
+
             </div>
             <br><br>
 
@@ -506,51 +574,61 @@
                 <div onclick="document.getElementsByClassName('more-detail')[0].style.visibility='hidden';"
                     style="font-size: 30px;cursor: pointer;">X Close</div>
             </center>
-            <br><br>
 
-            <div class="row mycard">
-                <div class="col-xs-2 col-sm-4 col-md-4 mycard-img" style="background-color: #FF6725;">
-                    <img src="img/more1.png" class="mycard-img-img" style="border-radius: 10%;">
-                </div>
-                <div class="col-xs-2 col-sm-8 col-md-8 mycard-text">
-                    In the first month, we collected the dataset about golf actions – cameras in different
-                    angles<br><br>
+            <center>
+                <p style = "font-family: Montserrat, sans-serif; font-size:30px;">
+                <br>
+                Technologies used in Robocoach and SMARTSWIM
+                </p>
+            
 
-                    For the whole complete action of a golf swing, we divide it into different stages, including
-                    Backswing,
-                    Downswing, Standing (Ready Position) and Final (Follow-Through).<br>
-
-                </div>
+            <div class="responsive-img">
+            <img src="img/HPE.png" class="mycard-img-img">
             </div>
-            <br><br>
-
-            <div class="row mycard">
-                <div class="col-xs-2 col-sm-4 col-md-4 mycard-img" style="background-color: #661F79;">
-                    <img src="img/ios-apps.svg" class="mycard-img-img" style="filter: invert(1);max-height: 200px;">
-                </div>
-                <div class="col-xs-2 col-sm-8 col-md-8 mycard-text">
-                    Around 300 videos are taken <br><br>
-
-                    Each one with the length of around 10 seconds
-
-
-                </div>
+            <br>
+            <div class="responsive-img">
+            <img src="img/lstm.png" class="mycard-img-img">
             </div>
-            <br><br>
+            <br>
 
-            <div class="row mycard">
-                <div class="col-xs-2 col-sm-4 col-md-4 mycard-img" style="background-color: #D4024A;">
-                    <img src="img/ios-body.svg" class="mycard-img-img" style="filter: invert(1);max-height: 200px;">
-                </div>
-                <div class="col-xs-2 col-sm-8 col-md-8 mycard-text">
-                    All we need is to obtain the human key point datasets
+            
+                <p style = "font-family: Montserrat, sans-serif; font-size:30px;">
+                <br>
+                Algorithm's Logic for Robocoach
+                </p>
+            
 
-
-
-
-                </div>
+            <div class="responsive-img">
+            <img src="img/analysis.png" class="mycard-img-img">
             </div>
-            <br><br>
+            <br>
+
+            
+                <p style = "font-family: Montserrat, sans-serif; font-size:30px;">
+                <br>
+                User's Interface for the System
+                </p>
+            
+
+            <div class="responsive-img">
+            <img src="img/unity_interface.png" class="mycard-img-img">
+            </div>
+            <br>
+
+            
+                <p style = "font-family: Montserrat, sans-serif; font-size:30px;">
+                <br>
+                Final Product
+                </p>
+            
+
+            <div class="responsive-img">
+            <img src="img/kiosk.png" class="mycard-img-img">
+            </div>
+            <br>
+
+            </center>
+<!--             <br><br>
 
             <div class="row mycard">
                 <div class="mycard-img" style="background-color: #D4024A;padding:0;">
@@ -586,7 +664,7 @@
 
                 </div>
             </div>
-            <br><br>
+            <br><br> -->
 
             <center>
                 <div onclick="document.getElementsByClassName('more-detail')[0].style.visibility='hidden';"
@@ -599,23 +677,33 @@
                 <img src="img/img1.svg" class="mycard-img-img" style="max-height: 200px;">
             </div>
             <div class="col-xs-2 col-sm-8 col-md-8 mycard-text">
-                Artificial Intelligence for Users’ Safety : Smartswim 
+                Drowning Detection System: Smartswim 
                 <br>
-                It aims at detecting pre-drowning cases in a swimming pool 
+                <br>
+                Detecting pre-drowning cases in a swimming pool 
 
             </div>
         </div>
 
         <br>
             <div class="mycard">
-                <iframe width="100%" height="800" src="https://www.youtube.com/embed/YgjYnR-hcmw" frameborder="0"
+                <iframe width="100%" height="600" src="https://www.youtube.com/embed/YgjYnR-hcmw" frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
             <br>
 
+        <br>
+            <div class="mycard">
+                <iframe width="100%" height="600" src="https://www.youtube.com/embed/JG3NatNHp70" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <br>
+
+
         <div class="mycard" style="max-width: 400px;cursor: pointer;" onclick="
-        document.getElementsByClassName('more-detail')[0].style.visibility='visible';
+        document.getElementsByClassName('smartswim-detail')[0].style.visibility='visible';
             ">
 
             <div class="mycard-text" style="height: 70px;padding: 20px;">
@@ -629,42 +717,76 @@
         </div>
         <br><br>
 
-        <div class="more-detail">
+        <div class="smartswim-detail">
             <center>
-                <div onclick="document.getElementsByClassName('more-detail')[0].style.visibility='hidden';"
+                <div onclick="document.getElementsByClassName('smartswim-detail')[0].style.visibility='hidden';"
                     style="font-size: 30px;cursor: pointer;">X Close</div>
             </center>
 
-            <div class="row mycard">
-                <div class="mycard-img" style="background-color: #D4024A;padding:0;">
-                    <img src="img/more5.png" class="mycard-img-img">
-                </div>
-                <div class="col-12 mycard-text">
-                    An Alternative Approach to Classify the Problems of a Golf Swing<br><br>
-                    Neural Network is now used for the detection of different stages of the golf swing as shown in the
-                    table
-                    below. <br><br>
-                    In each stage of the golf swing, there will be different criteria for the users to achieve. <br><br>
-                    For example, stage like backswing requires the users to keeps the left arm straight and turn his
-                    body.
-                    <br><br>
-                    Mathematical method can be used to track the users’ posture, which uses the coordinates of the human
-                    key
-                    points.
+                        <center>
+                <p style = "font-family: Montserrat, sans-serif; font-size:30px;">
+                <br>
+                Technologies used in SMARTSWIM
+                </p>
+            
 
-
-                </div>
+            <div class="responsive-img">
+            <img src="img/HPE.png" class="mycard-img-img">
             </div>
-            <br><br>
+            <br>
+            <div class="responsive-img">
+            <img src="img/lstm.png" class="mycard-img-img">
+            </div>
+            <br>
+            <div class="responsive-img">
+            <img src="img/human_tracking.png" class="mycard-img-img">
+            </div>
+            <br>
+
+            
+                <p style = "font-family: Montserrat, sans-serif; font-size:30px;">
+                <br>
+                System's Details
+                </p>
+            
+
+            <div class="responsive-img">
+            <img src="img/system_detail_1.png" class="mycard-img-img">
+            </div>
+            <br>
+            <div class="responsive-img">
+            <img src="img/system_detail_2.png" class="mycard-img-img">
+            </div>
+            <br>
+            <div class="responsive-img">
+            <img src="img/system_detail_3.png" class="mycard-img-img">
+            </div>
+            <br>
+            <div class="responsive-img">
+            <img src="img/system_detail_4.png" class="mycard-img-img">
+            </div>
+            <br>
+            
+            
+
+            <div class="responsive-img">
+            <img src="img/kiosk.png" class="mycard-img-img">
+            </div>
+            <br>
+
+            </center>
+
+
+            
 
             <center>
-                <div onclick="document.getElementsByClassName('more-detail')[0].style.visibility='hidden';"
+                <div onclick="document.getElementsByClassName('smartswim-detail')[0].style.visibility='hidden';"
                     style="font-size: 30px;cursor: pointer;">X Close</div>
             </center>
         </div>
 
 
-        <div class="row mycard">
+<!--         <div class="row mycard">
             <div class="col-xs-2 col-sm-4 col-md-4 mycard-img" style="background-color: #D4024A;">
                 <img src="img/img3.svg" class="mycard-img-img" style="max-height: 200px;">
             </div>
@@ -675,7 +797,7 @@
                 Widely utilize in several aspects
             </div>
         </div>
-        <br><br>
+        <br><br> -->
 
         <a name="news">&nbsp;<br><br><br></a>
         <center>
